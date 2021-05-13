@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <h1 class="text-center">QUIZ HTML</h1>
+        <hr>
+        <form name="formulaire">
+            <div class="h4 font-weight-bold"> 1. Le rôle du HTML est de... </div>
+            <div class="pt-4">
+                <label class="options">Mettre en forme du texte<input type="radio" name="qst1" value="0"> <span class="checkmark"></span> </label> <label class="options">Ordonner du contenu<input type="radio" name="qst1" value="1"> <span class="checkmark"></span> </label>
+                <label class="options">Créer des sites e-commerce <input type="radio" name="qst1" value="0"> <span class="checkmark"></span> </label> <label class="options">Aucune idée <input type="radio" name="qst1" value="0"> <span class="checkmark"></span> </label>
+            </div>
+            <div class="h4 font-weight-bold mt-5"> 2. Pour définir un titre DANS une page HTML, on utilise... </div>
+            <div class="pt-4">
+                <label class="options">L'élément title <input type="radio" name="qst2" value="0"> <span class="checkmark"></span> </label> <label class="options">L'élément head<input type="radio" name="qst2" value="0"> <span class="checkmark"></span> </label>
+                <label class="options">Un élément h1, h2, ... h6 <input type="radio" name="qst2" value="1"> <span class="checkmark"></span> </label> <label class="options">Aucune idée <input type="radio" name="qst2" value="0"> <span class="checkmark"></span> </label>
+            </div>
+            <div class="h4 font-weight-bold mt-5"> 3. Lorsque vous utilisez l'élément a, vous devez obligatoirement préciser... </div>
+            <div class="pt-4">
+                <label class="options">Un attribut target <input type="radio" name="qst3" value="0"> <span class="checkmark"></span> </label> <label class="options">Un attribut href<input type="radio" name="qst3" value="1"> <span class="checkmark"></span> </label>
+                <label class="options">Deux attributs href et target <input type="radio" name="qst3" value="0"> <span class="checkmark"></span> </label> <label class="options">Aucune idée <input type="radio" name="qst3" value="0"> <span class="checkmark"></span> </label>
+            </div>
+            <div class="h4 font-weight-bold mt-5"> 4. Pour indiquer qu'un contenu est très important, on utilise l'élément... </div>
+            <div class="pt-4">
+                <label class="options">Strong <input type="radio" name="qst4" value="1"> <span class="checkmark"></span> </label> <label class="options">Mark<input type="radio" name="qst4" value="0"> <span class="checkmark"></span> </label>
+                <label class="options">Em <input type="radio" name="qst4" value="0"> <span class="checkmark"></span> </label> <label class="options">Aucune idée <input type="radio" name="qst4" value="0"> <span class="checkmark"></span> </label>
+            </div>
+            <div class="h4 font-weight-bold mt-5"> 5. Quels éléments sont nécessaires pour créer une liste non-ordonnée ? </div>
+            <div class="pt-4">
+                <label class="options">ol et li <input type="radio" name="qst5" value="0"> <span class="checkmark"></span> </label> <label class="options">ul et ol<input type="radio" name="qst5" value="0"> <span class="checkmark"></span> </label>
+                <label class="options">ul et li<input type="radio" name="qst5" value="1"> <span class="checkmark"></span> </label> <label class="options">Aucune idée <input type="radio" name="qst5" value="0"> <span class="checkmark"></span> </label>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-end pt-2">
+                <label class="my-auto">Score : </label><input type="text" name="result" id="result">
+                <input class="btn btn-primary" type="button" value="Soumettre" onclick="sum()"><br>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
